@@ -55,30 +55,31 @@ def register_books():
 
 # Menu function
 def menu():
-    # Variable storing choice of options
-    choice = input("Menu:"
-                   "\nAdd a book === '1'"
-                   "\nUpdate book Qty === '2'"
-                   "\nDelete Book === '3'"
-                   "\nSearch Book === '4'"
-                   "\nExit === '0'"
-                   "\n---> ")
-
-    # Carries out specific functions related to user choice
-    if choice == "1":
-        add_book()
-
-    elif choice == "2":
-        update()
-    elif choice == "3":
-        delete_book()
-    elif choice == "4":
-        search_book()
-    elif choice == "0":
-        exit()
-
-    else:
-        print("Incorrect input ...")    # If input is not recognized ...
+    while True:
+        # Variable storing choice of options
+        choice = input("Menu:"
+                       "\nAdd a book === '1'"
+                       "\nUpdate book Qty === '2'"
+                       "\nDelete Book === '3'"
+                       "\nSearch Book === '4'"
+                       "\nExit === '0'"
+                       "\n---> ")
+    
+        # Carries out specific functions related to user choice
+        if choice == "1":
+            add_book()
+    
+        elif choice == "2":
+            update()
+        elif choice == "3":
+            delete_book()
+        elif choice == "4":
+            search_book()
+        elif choice == "0":
+            exit()
+    
+        else:
+            print("Incorrect input ...")    # If input is not recognized ...
 
 
 # Function to add book
