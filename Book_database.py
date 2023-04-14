@@ -20,7 +20,6 @@ def register_books():
         for line in books:
             line_strip = line.strip("\n").split("-")
             book_list.append(line_strip)
-        #print(line_strip[0])
 
         del book_list[0]    # Deletes row 1 with headers
 
@@ -247,11 +246,3 @@ CREATE TABLE IF NOT EXISTS books(id INTEGER PRIMARY KEY, Title TEXT, Author TEXT
 # Runs menu()
 register_books()
 menu()
-
-
-# === Optional commands, when checking ===
-#print(tabulate(book_list, headers=["ID", "Title", "Author", "Qty"]))
-#view_all = '''SELECT * from books'''
-#    cr.execute(view_all)
-#    records = cr.fetchall()
-#    print(records)
