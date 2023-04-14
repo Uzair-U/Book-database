@@ -1,12 +1,19 @@
-# Book-database
-Using SQL to create a database for a library going digital
+Ebookstore Inventory System
+This is a simple ebookstore inventory system that allows users to add, update, search, and delete books in an SQLite database. The system reads from a books_inventory.txt file to register books into the database for the first run.
 
-Uses sqlite3 to read txt file of books from a library.
-Splices data to use code.
-Key features:
-Adds books to inventory
-Updates specific book quantities
-Delete a book entry from inventory
-Search for a book by title author or id and outputs information of book
+Setup and Installation
+Clone the repository or download the code files to your local machine.
+Install the required packages: sqlite3
+Run the ebookstore.py file in a Python interpreter.
+Usage
+The ebookstore inventory system presents users with a menu containing the following options:
 
-Amongst my HyperionDev projects
+Add a book: Allows users to add a new book to the database.
+Update book Qty: Allows users to update the quantity of a book in the database.
+Delete Book: Allows users to delete a book from the database.
+Search Book: Allows users to search for a book in the database.
+Exit: Allows users to exit the program.
+When a user selects an option, they will be prompted to provide further input to carry out the function.
+
+Credits
+This project was created by Uzair.
